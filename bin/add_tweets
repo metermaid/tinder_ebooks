@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require '../markov_tweets'
+
+puts twitbot.add_tweets(BUFFER_SIZE)
