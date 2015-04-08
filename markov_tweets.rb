@@ -47,8 +47,8 @@ class TweetGenerator
 	end
 end
 
-twitbot = TweetGenerator.new('dictionary', PATH_TO_INPUTS)
 
 get '/' do
+	twitbot = TweetGenerator.new('dictionary', PATH_TO_INPUTS)
 	twitbot.add_tweets(BUFFER_SIZE)
 end

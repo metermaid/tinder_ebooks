@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-require '../markov_tweets'
+require_relative '../markov_tweets'
 
+twitbot = TweetGenerator.new('dictionary', PATH_TO_INPUTS)
 puts twitbot.add_tweets(BUFFER_SIZE)
